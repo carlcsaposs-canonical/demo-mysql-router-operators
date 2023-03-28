@@ -20,10 +20,14 @@ from ops.model import ActiveStatus, BlockedStatus, WaitingStatus
 
 from common import foo
 
+import tenacity
+
 # Log messages can be retrieved using juju debug-log
 logger = logging.getLogger(__name__)
 
+from importlib.metadata import version
 logger.error(foo.bar())
+logger.error(f"local version: {version('tenacity')}")
 
 VALID_LOG_LEVELS = ["info", "debug", "warning", "error", "critical"]
 

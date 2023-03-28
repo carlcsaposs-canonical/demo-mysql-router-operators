@@ -1,2 +1,5 @@
+import tenacity
+from importlib.metadata import version
+
 def bar():
-    return "Hello, world!"
+    return version("tenacity")
