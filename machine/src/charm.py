@@ -18,8 +18,12 @@ from ops.charm import CharmBase
 from ops.main import main
 from ops.model import ActiveStatus, BlockedStatus, WaitingStatus
 
+from common import foo
+
 # Log messages can be retrieved using juju debug-log
 logger = logging.getLogger(__name__)
+
+logger.error(foo.bar())
 
 VALID_LOG_LEVELS = ["info", "debug", "warning", "error", "critical"]
 
@@ -58,6 +62,7 @@ class BarCharm(CharmBase):
 
         Learn more about config at https://juju.is/docs/sdk/config
         """
+        return
         # Fetch the new config value
         log_level = self.model.config["log-level"].lower()
 
