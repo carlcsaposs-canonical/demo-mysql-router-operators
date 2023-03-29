@@ -17,10 +17,6 @@ They share a common Python package [common](common). (In this demo, the package 
 
 1. `build.sh` copies the package directory to the charm directory
 
-By default, `charmcraft` does not update packages in `requirements.txt` unless you run `charmcraft clean`.
+2. `charmcraft pack`
 
-2. Workaround: remove charmcraft's requirements hash file to tell it to update packages
-
-3. `charmcraft pack`
-
-4. Remove copied package directory from step 1
+3. Remove copied package directory from step 1
