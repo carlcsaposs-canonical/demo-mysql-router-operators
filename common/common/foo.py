@@ -1,2 +1,4 @@
+from . import hello
+
 def bar():
-    return "Hello, world!"
+    return hello.MESSAGE
