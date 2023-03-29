@@ -1,6 +1,2 @@
-import tenacity
-from importlib.metadata import version
-import requests
-
 def bar():
-    return requests.__version__
+    return "Hello, world!"

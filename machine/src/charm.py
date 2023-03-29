@@ -25,12 +25,6 @@ logger = logging.getLogger(__name__)
 
 logger.error(foo.bar())
 
-try:
-    import requests
-    logger.error(f"FOOBAR: {requests.__version__}")
-except ModuleNotFoundError:
-    logger.exception("no requests module")
-
 VALID_LOG_LEVELS = ["info", "debug", "warning", "error", "critical"]
 
 
