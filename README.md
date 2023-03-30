@@ -19,7 +19,7 @@ They share a common Python package [common](common). (In this demo, the package 
 
 By default, `charmcraft` does not update packages in `requirements.txt` unless you run `charmcraft clean`.
 
-2. Workaround: remove charmcraft's requirements hash file to tell it to update packages
+2. Workaround: add a comment with random number to `requirements.txt` to tell charmcraft to update packages
 
 3. `charmcraft pack`
 
